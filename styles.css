@@ -1,0 +1,57 @@
+/* main body style */
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+/* grid for top section */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px
+}
+
+/* profile pic area */
+.profile-pic {
+    text-align: center;
+}
+
+/* making the image round */
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: gray
+}
+
+/* about section */
+.about {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black
+}
+
+/* grid for bottom boxes */
+.grid-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+/* both boxes styling */
+.box1, .box2 {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 15px
+}
+
+/* responsive for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .grid-boxes {
+        grid-template-columns: 1fr
+    }
+}
